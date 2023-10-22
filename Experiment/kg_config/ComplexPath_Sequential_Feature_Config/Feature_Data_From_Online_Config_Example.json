@@ -1,0 +1,160 @@
+{
+    "Start_Node_Feature_Table_List": [
+        {
+            "Table_Name": "tmp.tmp___JingLian_Combined_Feature_Table___Mobile_Node___05_30_raw_0",
+            "Summary_Table_Name": "tmp.tmp___JingLian_Combined_Feature_Table___Mobile_Node_Summary___05_30_raw_0",
+            "UID": "Mobile_Node_UID"
+        }
+    ],
+    "Start_Node_class": "Mobile_Node",
+    "Meta_Path_Feature_Table_List": {
+        "mobile_to_user_pin_by_all": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_all___User_Pin_Node_UID___Weight_0___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_all___User_Pin_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_all___User_Pin_Node_UID___Weight_0___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_all___User_Pin_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "User_Pin_Node"
+            }
+        ],
+        "mobile_to_user_pin_by_send": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_send___User_Pin_Node_UID___Weight_0___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_send___User_Pin_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_send___User_Pin_Node_UID___Weight_0___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_send___User_Pin_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "User_Pin_Node"
+            }
+        ],
+        "mobile_to_user_pin_by_receive": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_receive___User_Pin_Node_UID___Weight_0___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_receive___User_Pin_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_user_pin_by_receive___User_Pin_Node_UID___Weight_0___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_user_pin_by_receive___User_Pin_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "User_Pin_Node"
+            }
+        ],
+        "mobile_to_site_by_send": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_send___Road_Node_UID___Weight_0___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_send___Road_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_send___Road_Node_UID___Weight_0___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_send___Road_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Road_Node"
+            },
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_send___Site_Node_UID___Weight_1___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_send___Site_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_send___Site_Node_UID___Weight_1___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_send___Site_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Site_Node"
+            }
+        ],
+        "mobile_to_site_by_receive": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_receive___Road_Node_UID___Weight_0___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_receive___Road_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_receive___Road_Node_UID___Weight_0___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_receive___Road_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Road_Node"
+            },
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_receive___Site_Node_UID___Weight_1___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_receive___Site_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_receive___Site_Node_UID___Weight_1___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_receive___Site_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Site_Node"
+            }
+        ],
+        "mobile_to_site_by_company": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_company___Road_Node_UID___Weight_1___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_company___Road_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_company___Road_Node_UID___Weight_1___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_company___Road_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Road_Node"
+            },
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_company___Site_Node_UID___Weight_2___Groupby_Result___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_company___Site_Node_UID___Groupby_Result___06_07"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JL_MP_W_Feat___mobile_to_site_by_company___Site_Node_UID___Weight_2___Groupby_Summary___06_07",
+                    "tmp.tmp___JL_MP_N_Feat___mobile_to_site_by_company___Site_Node_UID___Groupby_Summary___06_07"
+                ],
+                "Node_class": "Site_Node"
+            }
+        ],
+        "mobile_to_company": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___mobile_company_site___Company_Node_UID___Groupby_Result___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Company_Node_UID___Groupby_Result___05_24"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___mobile_company_site___Company_Node_UID___Groupby_Result_Summary___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Company_Node_UID___Groupby_Result_Summary___05_24"
+                ],
+                "Node_class": "Company_Node"
+            }
+        ],
+        "company_to_industry": [
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___company_related_to_industry___Industry_Type_Node_l4_UID___Groupby_Result___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Industry_Type_Node_l4_UID___Groupby_Result___05_24"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___company_related_to_industry___Industry_Type_Node_l4_UID___Groupby_Result_Summary___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Industry_Type_Node_l4_UID___Groupby_Result_Summary___05_24"
+                ],
+                "Node_class": "Industry_Type_Node"
+            },
+            {
+                "Feature_Table_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___company_related_to_industry___Industry_Type_Node_l2_UID___Groupby_Result___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Industry_Type_Node_l2_UID___Groupby_Result___05_24"
+                ],
+                "Feature_Table_Summary_List": [
+                    "tmp.tmp___JingLian_Meta_Path_Feature___company_related_to_industry___Industry_Type_Node_l2_UID___Groupby_Result_Summary___04_18",
+                    "tmp.tmp___JL_MP_N_Feat___company_related_to_industry___Industry_Type_Node_l2_UID___Groupby_Result_Summary___05_24"
+                ],
+                "Node_class": "Industry_Type_Node"
+            }
+        ]
+    }
+}

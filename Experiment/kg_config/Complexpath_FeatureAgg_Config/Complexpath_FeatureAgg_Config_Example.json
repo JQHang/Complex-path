@@ -1,0 +1,59 @@
+{
+    "l4_industry_to_related_info": {
+        "Output_Columns_Type": "ALL_Nodes_And_Edges",
+        "Table_Name_Comment": "06_07",
+        "Max_Column_Number": -1,
+        "Relation_List": [
+            {
+                "Head_Column_name": "industry_l4_code",
+                "Head_Column_name_AS": "Industry_Type_Node_l4_UID",
+                "Head_Node_class": "Industry_Type_Node_l4",
+                "Relation_Data": "tmp.tmp_kg_graph_table_edges_from_company_2_industry_dc_v3",
+                "Tail_Column_name": "credit_no",
+                "Tail_Column_name_AS": "Company_Node_UID",
+                "Tail_Node_class": "Company_Node"
+            },
+            {
+                "Head_Column_name": "credit_no",
+                "Head_Column_name_AS": "Company_Node_UID",
+                "Head_Node_class": "Company_Node",
+                "Max_Sample_Scale": 5,
+                "Relation_Data": "tmp.tmp_kg_graph_table_edges_from_company_2_mobile_dc_v3",
+                "Tail_Column_name": "company_phone_sha",
+                "Tail_Column_name_AS": "Mobile_Node_UID",
+                "Tail_Node_class": "Mobile_Node"
+            },
+            {
+                "Head_Column_name": "mobile_sha",
+                "Head_Column_name_AS": "Mobile_Node_UID",
+                "Head_Node_class": "Mobile_Node",
+                "Max_Sample_Scale": 5,
+                "Max_Sample_Type": "TopN",
+                "Relation_Data": "tmp.tmp_KG_graph_table_edges_from_mobile_2_user_pin_express_dc",
+                "Tail_Column_name": "user_pin",
+                "Tail_Column_name_AS": "User_Pin_Node_UID",
+                "Tail_Node_class": "User_Pin_Node",
+                "Weight_Column": "send_and_receive_count_m3"
+            }
+        ]
+    },
+    "user_pin_to_mobile": {
+        "Output_Columns_Type": "ALL_Nodes_And_Edges",
+        "Table_Name_Comment": "06_07",
+        "Max_Column_Number": -1,
+        "Relation_List": [
+            {
+                "Head_Column_name": "user_pin",
+                "Head_Column_name_AS": "User_Pin_Node_UID",
+                "Head_Node_class": "User_Pin_Node",
+                "Max_Sample_Scale": 10,
+                "Max_Sample_Type": "TopN",
+                "Relation_Data": "tmp.tmp_KG_graph_table_edges_from_mobile_2_user_pin_express_dc",
+                "Tail_Column_name": "mobile_sha",
+                "Tail_Column_name_AS": "Mobile_Node_UID",
+                "Tail_Node_class": "Mobile_Node",
+                "Weight_Column": "send_and_receive_count_m3"
+            }
+        ]
+    }
+}

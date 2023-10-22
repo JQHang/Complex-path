@@ -1,0 +1,134 @@
+{
+    "Company_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_company_whale_dc2_v3",
+                "UID": "credit_no"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_company_pastsign_jy",
+                "UID": "credit_no"
+            }
+        ]
+    },
+    "Signed_Company_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_company_whale_dc2_v3",
+                "UID": "credit_no"
+            }
+        ]
+    },
+    "User_Pin_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_userpin_wuji_dc2_v3",
+                "UID": "user_pin"
+            },
+            {
+                "Table_Name": "tmp.tmp_kg_graph_table_feature_of_pin_invoice",
+                "UID": "pin"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_company_pin_enterprise_da",
+                "UID": "pin"
+            }
+        ]
+    },
+    "Mobile_Node": {
+        "Feature_Data_List": [            
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_1_dc_v2",
+                "UID": "consigner_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_receive_1_dc_v2",
+                "UID": "receive_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_and_receive_1_dc_v2",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_3_dc",
+                "UID": "consigner_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_receive_3_dc",
+                "UID": "receive_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_and_receive_3_dc",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_claim_dc",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_pastsign_jy",
+                "UID": "irr_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_kg_graph_table_feature_of_mobile_company_count_as_legal_person",
+                "UID": "mobile_encrypted"
+            }
+        ]
+    },
+    "Userpin_Contact_Mobile_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_pastsign_jy",
+                "UID": "irr_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_kg_graph_table_feature_of_mobile_company_count_as_legal_person",
+                "UID": "mobile_encrypted"
+            }
+        ]
+    },
+    "Contact_Mobile_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_pastsign_jy",
+                "UID": "irr_mobile_sha"
+            }
+        ]
+    },
+    "Signed_Mobile_Node": {
+        "Feature_Data_List": [
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_1_dc_v2",
+                "UID": "consigner_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_receive_1_dc_v2",
+                "UID": "receive_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_and_receive_1_dc_v2",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_3_dc",
+                "UID": "consigner_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_receive_3_dc",
+                "UID": "receive_mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_send_and_receive_3_dc",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_claim_dc",
+                "UID": "mobile_sha"
+            },
+            {
+                "Table_Name": "tmp.tmp_kg_graph_table_feature_of_mobile_company_count_as_legal_person",
+                "UID": "mobile_encrypted"
+            }
+        ]
+    }
+}

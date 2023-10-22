@@ -1,0 +1,38 @@
+{
+    "mobile_to_user_pin_by_all": {
+        "Head_Column_name": "mobile_sha",
+        "Head_Node_class": "Mobile_Node",
+        "Max_Sample_Scale_list": [20],
+        "Reverse_Max_Sample_Scale_list": [0],
+        "Relation_Data": "tmp.tmp_KG_graph_table_edges_from_mobile_2_user_pin_express_dc",
+        "Tail_Column_name": "user_pin",
+        "Tail_Node_class": "User_Pin_Node",
+    },
+    "mobile_to_road": {
+        "Head_Column_name": "sender_phone_sha",
+        "Head_Node_class": "Mobile_Node",
+        "Max_Sample_Scale_list": [20],
+        "Reverse_Max_Sample_Scale_list": [0],
+        "Relation_Data": "tmp.tmp_KG_graph_table_edges_from_mobile_2_road_id_send_dc_v3",
+        "Tail_Column_name": "site_road_id",
+        "Tail_Node_class": "Road_Node"
+    },
+    "road_belongs_to_site": {
+        "Head_Column_name": "site_road_id",
+        "Head_Node_class": "Road_Node",
+        "Max_Sample_Scale_list": [0, 1],
+        "Reverse_Max_Sample_Scale_list": [0, 0],
+        "Relation_Data": "tmp.tmp_KG_graph_table_edges_from_site_id_2_site_road_id_dc_v3",
+        "Tail_Column_name": "site_id",
+        "Tail_Node_class": "Site_Node"
+    },
+    "mobile_to_company": {
+        "Head_Column_name": "company_phone_sha",
+        "Head_Node_class": "Mobile_Node",
+        "Max_Sample_Scale_list": [20],
+        "Reverse_Max_Sample_Scale_list": [0],
+        "Relation_Data": "tmp.tmp_kg_graph_table_edges_from_company_2_mobile_dc_v3",
+        "Tail_Column_name": "credit_no",
+        "Tail_Node_class": "Company_Node"
+    }
+}

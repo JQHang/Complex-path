@@ -4,11 +4,13 @@ This is the code of our framework, CompGraph, which has been effectively deploye
 ![Deployment](./fig/Deployment_1013.png)
 
 # Introduction for Complex-Path
-The cornerstone of our strategy lies in the definiton 'complex-path', an innovative approach designed to extract detailed information from heterogeneous graphs. Unlike the traditional meta-path technique, complex-path is adept at capturing both the attribute information and the complex structures in the heterogeneous graph. The example below illustrates how to identify companies related to our target company under complex conditions. Specifically, it shows how to select companies that are in the top 5 most frequently used delivery regions of the target company, share the same industry, and have signed contracts within the past 90 days.
+The cornerstone of our strategy lies in the definiton 'complex-path', an innovative approach designed to extract detailed information from heterogeneous graphs. Unlike the traditional meta-path technique, complex-path is adept at capturing both the attribute information and the complex structures in the heterogeneous graph. The comparison below shows how complex-path effectively identifies companies related to our target under complex conditions, a task challenging for the meta-path method. Specifically, it shows how to select companies that are in the top 5 most frequently used delivery regions of the target company, share the same industry, and have signed contracts within the past 90 days.
 
 ![Meta-Path](./fig/Meta-Path_1022.png)
+*Meta-Path*
 
 ![Complex-Path](./fig/CompPath_1022.png)
+*Complex-Path*
 
 # Brief Description for Our Code
 The primary function of our code is to efficiently extract information based on complex-paths from a billion-scale heterogeneous graph, utilizing the distributed system Spark. The extracted data is then used to train our model and make prediction. We are continuously refining and optimizing our code, and will keep updating it. Currently, we have achieved the capability to perform a comprehensive weekly ranking for over one billion customers who have utilized JD Logistics services.

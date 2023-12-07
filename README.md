@@ -6,8 +6,8 @@ This is the code of our framework, CompGraph, which has been effectively deploye
 # Introduction for Complex-Path
 The cornerstone of our strategy lies in the definiton 'complex-path', an innovative approach designed to extract detailed information from heterogeneous graphs. Unlike the traditional meta-path technique, complex-path is adept at capturing both the attribute information and the complex structures in the heterogeneous graph. Below are the difference in the definition of meta-path and complex-path.
 <p align="center">
-  <img src="./fig/meta-path.png" width="50%" style="display: inline-block;" />
-  <img src="./fig/complex-path.png" width="50%" style="display: inline-block;" />
+  <img src="./fig/meta-path.png" width="50%">
+  <img src="./fig/complex-path.png" width="50%">
 </p>
 
 The figures below show how complex-path effectively identifies companies related to our target under complex conditions, a task challenging for the meta-path method. Specifically, it shows how to select companies that are in the top 5 most frequently used delivery regions of the target company, share the same industry, and have signed contracts within the past 90 days.

@@ -13,8 +13,10 @@ The cornerstone of our strategy lies in the definiton 'complex-path', an innovat
 The figures below show how complex-path effectively identifies companies related to our target under complex conditions, a task challenging for the meta-path method. Specifically, it shows how to select companies that are in the top 5 most frequently used delivery regions of the target company, share the same industry, and have signed contracts within the past 90 days.
 
 ![Meta-Path](./fig/Meta-Path_1022.png)
+*Example for meta-path: it can only find the co-delivery region relaionship or co-industry relationship seperately*
 
 ![Complex-Path](./fig/CompPath_1022.png)
+*Example for complex-path*
 
 # Brief Description for Our Code
 The primary function of our code is to efficiently extract information based on complex-paths from a billion-scale heterogeneous graph, utilizing the distributed system Spark. The extracted data is then used to train our model and make prediction. We are continuously refining and optimizing our code, and will keep updating it. Currently, we have achieved the capability to perform a comprehensive weekly ranking for over one billion customers who have utilized JD Logistics services.

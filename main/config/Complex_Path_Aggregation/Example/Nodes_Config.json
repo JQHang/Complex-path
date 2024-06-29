@@ -1,0 +1,15 @@
+{
+    "Signed_Mobile_Node": [
+        {
+            "Table_Name": "Mobile_Shipping_Info_V1",
+            "UID": "Start_Mobile",
+            "Source": "HDFS"
+        }
+    ],
+    "Mobile_Node": [
+        {
+            "Table_Name": "tmp.tmp_KG_graph_table_feature_of_mobile_pastsign_jy",
+            "UID": "irr_mobile_sha"
+        }
+    ]
+}

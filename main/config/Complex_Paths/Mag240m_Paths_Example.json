@@ -1,0 +1,384 @@
+[
+    {
+        "path_name": "past_same_author_paper",
+        "path_schema": [
+            {
+                "head_node_types": [
+                    "Paper"
+                ],
+                "head_node_indexes": [
+                    1
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "edge",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Paper"
+                            ],
+                            "head_node_indexes": [
+                                1
+                            ],
+                            "head_node_columns": [
+                                "paper"
+                            ],
+                            "edge_table_name": "author___writes___paper",
+                            "edge_index": 1,
+                            "tail_node_columns": [
+                                "author"
+                            ],
+                            "tail_node_types": [
+                                "Author"
+                            ],
+                            "tail_node_indexes": [
+                                2
+                            ],
+                            "edge_sample": {
+                                "type": "random",
+                                "count": 100
+                            }
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Author"
+                ],
+                "tail_node_indexes": [
+                    2
+                ],
+                "node_schemas": [
+                    {
+                        "join_type": "left",
+                        "node_type": "Paper",
+                        "node_index": 1,
+                        "node_column": "paper",
+                        "node_table_name": "Paper_Year",
+                        "feature_columns": [
+                            "year"
+                        ]
+                    }
+                ],
+                "path_limit": ""
+            },
+            {
+                "head_node_types": [
+                    "Author"
+                ],
+                "head_node_indexes": [
+                    2
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "edge",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Author"
+                            ],
+                            "head_node_indexes": [
+                                2
+                            ],
+                            "head_node_columns": [
+                                "author"
+                            ],
+                            "edge_table_name": "author___writes___paper",
+                            "edge_index": 2,
+                            "tail_node_columns": [
+                                "paper"
+                            ],
+                            "tail_node_types": [
+                                "Paper"
+                            ],
+                            "tail_node_indexes": [
+                                3
+                            ],
+                            "node_schemas": [
+                                {
+                                    "join_type": "inner",
+                                    "node_type": "Paper",
+                                    "node_index": 3,
+                                    "node_column": "paper",
+                                    "node_table_name": "Paper_Area",
+                                    "feature_columns": [
+                                        
+                                    ]
+                                }
+                            ],
+                            "edge_sample": {
+                                "type": "random",
+                                "count": 100
+                            }
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Paper"
+                ],
+                "tail_node_indexes": [
+                    3
+                ],
+                "node_schemas": [
+                    {
+                        "join_type": "inner",
+                        "node_type": "Paper",
+                        "node_index": 3,
+                        "node_column": "paper",
+                        "node_table_name": "Paper_Area",
+                        "feature_columns": [
+                            
+                        ]
+                    },
+                    {
+                        "join_type": "left",
+                        "node_type": "Paper",
+                        "node_index": 3,
+                        "node_column": "paper",
+                        "node_table_name": "Paper_Year",
+                        "feature_columns": [
+                            "year"
+                        ]
+                    }
+                ],
+                "path_limit": "Paper_1_year >= Paper_3_year and Paper_1 != Paper_3"
+            }
+        ]
+    },
+    {
+        "path_name": "paper_cited_papers",
+        "path_schema": [
+            {
+                "head_node_types": [
+                    "Paper"
+                ],
+                "head_node_indexes": [
+                    1
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "edge",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Paper"
+                            ],
+                            "head_node_indexes": [
+                                1
+                            ],
+                            "head_node_columns": [
+                                "paper"
+                            ],
+                            "edge_table_name": "paper___cites___paper",
+                            "edge_index": 1,
+                            "tail_node_columns": [
+                                "cited_paper"
+                            ],
+                            "tail_node_types": [
+                                "Paper"
+                            ],
+                            "tail_node_indexes": [
+                                2
+                            ]
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Paper"
+                ],
+                "tail_node_indexes": [
+                    2
+                ],
+                "node_schemas": [
+                    {
+                        "join_type": "inner",
+                        "node_type": "Paper",
+                        "node_index": 2,
+                        "node_column": "paper",
+                        "node_table_name": "Paper_Area",
+                        "feature_columns": [
+                            
+                        ]
+                    }
+                ],
+                "path_limit": ""
+            }
+        ]
+    },
+    {
+        "path_name": "paper_cited_same_author_papers",
+        "path_schema": [
+            {
+                "head_node_types": [
+                    "Paper"
+                ],
+                "head_node_indexes": [
+                    1
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "path",
+                        "path_name": "sub_past_same_author_paper",
+                        "path_schema": [
+                            {
+                                "head_node_types": [
+                                    "Paper"
+                                ],
+                                "head_node_indexes": [
+                                    1
+                                ],
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Paper"
+                                            ],
+                                            "head_node_indexes": [
+                                                1
+                                            ],
+                                            "head_node_columns": [
+                                                "paper"
+                                            ],
+                                            "edge_table_name": "author___writes___paper",
+                                            "edge_index": 1,
+                                            "tail_node_columns": [
+                                                "author"
+                                            ],
+                                            "tail_node_types": [
+                                                "Author"
+                                            ],
+                                            "tail_node_indexes": [
+                                                2
+                                            ],
+                                            "edge_sample": {
+                                                "type": "random",
+                                                "count": 100
+                                            }
+                                        }
+                                    }
+                                ],
+                                "tail_node_types": [
+                                    "Author"
+                                ],
+                                "tail_node_indexes": [
+                                    2
+                                ],
+                                "node_schemas": [
+                                    {
+                                        "join_type": "left",
+                                        "node_type": "Paper",
+                                        "node_index": 1,
+                                        "node_column": "paper",
+                                        "node_table_name": "Paper_Year",
+                                        "feature_columns": [
+                                            "year"
+                                        ]
+                                    }
+                                ],
+                                "path_limit": ""
+                            },
+                            {
+                                "head_node_types": [
+                                    "Author"
+                                ],
+                                "head_node_indexes": [
+                                    2
+                                ],
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Author"
+                                            ],
+                                            "head_node_indexes": [
+                                                2
+                                            ],
+                                            "head_node_columns": [
+                                                "author"
+                                            ],
+                                            "edge_table_name": "author___writes___paper",
+                                            "edge_index": 2,
+                                            "tail_node_columns": [
+                                                "paper"
+                                            ],
+                                            "tail_node_types": [
+                                                "Paper"
+                                            ],
+                                            "tail_node_indexes": [
+                                                3
+                                            ],
+                                            "edge_sample": {
+                                                "type": "random",
+                                                "count": 100
+                                            }
+                                        }
+                                    }
+                                ],
+                                "tail_node_types": [
+                                    "Paper"
+                                ],
+                                "tail_node_indexes": [
+                                    3
+                                ],
+                                "node_schemas": [
+                                    {
+                                        "join_type": "inner",
+                                        "node_type": "Paper",
+                                        "node_index": 3,
+                                        "node_column": "paper",
+                                        "node_table_name": "Paper_Area",
+                                        "feature_columns": [
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "join_type": "left",
+                                        "node_type": "Paper",
+                                        "node_index": 3,
+                                        "node_column": "paper",
+                                        "node_table_name": "Paper_Year",
+                                        "feature_columns": [
+                                            "year"
+                                        ]
+                                    }
+                                ],
+                                "path_limit": "Paper_1_year >= Paper_3_year"
+                            }
+                        ]
+                    },
+                    {
+                        "relation_type": "edge",
+                        "join_type": "inner",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Paper"
+                            ],
+                            "head_node_indexes": [
+                                1
+                            ],
+                            "head_node_columns": [
+                                "paper"
+                            ],
+                            "edge_table_name": "paper___cites___paper",
+                            "edge_index": 1,
+                            "tail_node_columns": [
+                                "cited_paper"
+                            ],
+                            "tail_node_types": [
+                                "Paper"
+                            ],
+                            "tail_node_indexes": [
+                                3
+                            ]
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Paper"
+                ],
+                "tail_node_indexes": [
+                    3
+                ],
+                "path_limit": "Paper_1 != Paper_3"
+            }
+        ]
+    }
+]

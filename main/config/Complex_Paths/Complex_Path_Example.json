@@ -1,0 +1,286 @@
+[
+    {
+        "path_name": "mobile_coindustry_coroad_company_mobiles",
+        "path_schema": [
+            {
+                "head_node_types": [
+                    "Mobile_Node"
+                ],
+                "head_node_indexes": [
+                    1
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "edge",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Mobile_Node"
+                            ],
+                            "head_node_indexes": [
+                                1
+                            ],
+                            "head_node_columns": [
+                                "company_phone_sha"
+                            ],
+                            "edge_table_name": "Company_Phone_Relationship_V2",
+                            "tail_node_columns": [
+                                "credit_no"
+                            ],
+                            "tail_node_types": [
+                                "Company_Node"
+                            ],
+                            "tail_node_indexes": [
+                                2
+                            ]
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Company_Node"
+                ],
+                "tail_node_indexes": [
+                    2
+                ]
+            },
+            {
+                "head_node_types": [
+                    "Company_Node"
+                ],
+                "head_node_indexes": [
+                    2
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "path",
+                        "path_name": "company_coindustry_companies",
+                        "path_schema": [
+                            {
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Company_Node"
+                                            ],
+                                            "head_node_indexes": [
+                                                2
+                                            ],
+                                            "head_node_columns": [
+                                                "credit_no"
+                                            ],
+                                            "edge_table_name": "Company_Industry_Relationship_V1",
+                                            "tail_node_columns": [
+                                                "industry_l3_code"
+                                            ],
+                                            "tail_node_types": [
+                                                "Industry_L3_Node"
+                                            ],
+                                            "tail_node_indexes": [
+                                                3
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "tail_node_types": [
+                                    "Industry_L3_Node"
+                                ],
+                                "tail_node_indexes": [
+                                    3
+                                ]
+                            },
+                            {
+                                "head_node_types": [
+                                    "Industry_L3_Node"
+                                ],
+                                "head_node_indexes": [
+                                    3
+                                ],
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Industry_L3_Node"
+                                            ],
+                                            "head_node_indexes": [
+                                                3
+                                            ],
+                                            "head_node_columns": [
+                                                "industry_l3_code"
+                                            ],
+                                            "edge_table_name": "Company_Industry_Relationship_V1",
+                                            "tail_node_columns": [
+                                                "credit_no"
+                                            ],
+                                            "tail_node_types": [
+                                                "Company_Node"
+                                            ],
+                                            "tail_node_indexes": [
+                                                5
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "tail_node_types": [
+                                    "Company_Node"
+                                ],
+                                "tail_node_indexes": [
+                                    5
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "relation_type": "path",
+                        "join_type": "inner",
+                        "path_name": "company_coroad_companies",
+                        "path_schema": [
+                            {
+                                "head_node_types": [
+                                    "Company_Node"
+                                ],
+                                "head_node_indexes": [
+                                    2
+                                ],
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Company_Node"
+                                            ],
+                                            "head_node_indexes": [
+                                                2
+                                            ],
+                                            "head_node_columns": [
+                                                "credit_no"
+                                            ],
+                                            "edge_table_name": "Company_Address_Relationship_V1",
+                                            "tail_node_columns": [
+                                                "site_road_id"
+                                            ],
+                                            "tail_node_types": [
+                                                "Road_Node"
+                                            ],
+                                            "tail_node_indexes": [
+                                                4
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "tail_node_types": [
+                                    "Road_Node"
+                                ],
+                                "tail_node_indexes": [
+                                    4
+                                ],
+                                "tuple_limit": ""
+                            },
+                            {
+                                "head_node_types": [
+                                    "Road_Node"
+                                ],
+                                "head_node_indexes": [
+                                    4
+                                ],
+                                "relation_list": [
+                                    {
+                                        "relation_type": "edge",
+                                        "edge_schema": {
+                                            "head_node_types": [
+                                                "Road_Node"
+                                            ],
+                                            "head_node_indexes": [
+                                                4
+                                            ],
+                                            "head_node_columns": [
+                                                "site_road_id"
+                                            ],
+                                            "edge_table_name": "Company_Address_Relationship_V1",
+                                            "tail_node_columns": [
+                                                "credit_no"
+                                            ],
+                                            "tail_node_types": [
+                                                "Company_Node"
+                                            ],
+                                            "tail_node_indexes": [
+                                                5
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "tuple_limit": "",
+                                "path_limit": ""
+                            }
+                        ]
+                    }
+                ],
+                "tail_node_types": [
+                    "Company_Node"
+                ],
+                "tail_node_indexes": [
+                    5
+                ],
+                "node_schemas": [
+                    {
+                        "join_type": "left",
+                        "node_type": "Company_Node",
+                        "node_index": 5,
+                        "node_column": "credit_no",
+                        "node_table_name": "Company_Clue_Business_Situation",
+                        "feature_columns": [
+                            "company_chance_stage_50",
+                            "company_chance_stage_60"
+                        ],
+                        "node_limit": "company_chance_stage_50 > 0 or company_chance_stage_60 > 0"
+                    }
+                ],
+                "path_limit": "",
+                "path_sample": {
+                    "type": "Random",
+                    "count": 100
+                }
+            },
+            {
+                "head_node_types": [
+                    "Company_Node"
+                ],
+                "head_node_indexes": [
+                    5
+                ],
+                "relation_list": [
+                    {
+                        "relation_type": "edge",
+                        "edge_schema": {
+                            "head_node_types": [
+                                "Company_Node"
+                            ],
+                            "head_node_indexes": [
+                                5
+                            ],
+                            "head_node_columns": [
+                                "credit_no"
+                            ],
+                            "edge_table_name": "Company_Phone_Relationship_V2",
+                            "tail_node_columns": [
+                                "company_phone_sha"
+                            ],
+                            "tail_node_types": [
+                                "Mobile_Node"
+                            ],
+                            "tail_node_indexes": [
+                                6
+                            ]
+                        }
+                    }
+                ],
+                "tail_node_types": [
+                    "Mobile_Node"
+                ],
+                "tail_node_indexes": [
+                    6
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,31 @@
+{
+    "mobile_to_signed_mobile_in_6m": [
+        {
+            "Head_Node_Type": "Mobile_Node",
+            "Head_Node_Index": 1,
+            "Edges_Config": [
+                {
+                    "Type": "Edge",
+                    "Table_Name": "Shipping_Relation_Between_Mobiles_V1",
+                    "Head_Node_Column": "Start_Mobile",
+                    "Tail_Node_Column": "End_Mobile",
+                    "Edge_Limits": "总收发件_过去6个月_Total_Packages > 0"
+                }
+            ],
+            "Tail_Node_Type": "Mobile_Node",
+            "Tail_Node_Index": 2,
+            "Tail_Node_Limits": [
+                {
+                    "Table_Name": "tmp.tmp_kg_graph_table_feature_of_mobile_pastsign_jy",
+                    "Node_Column": "irr_mobile_sha",
+                    "Feature_Columns": [
+                        "sign_success"
+                    ],
+                    "Node_Limits": "sign_success = 1",
+                }
+            ],
+            "Path_Limits": "",
+            "Agg_func": []
+        }
+    ]
+}

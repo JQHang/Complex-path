@@ -1,0 +1,9 @@
+{
+    "Node_Type": "Mobile_Node",
+    "Node_Column": "mobile_encrypted",
+    "Label_Column": "sign_status_id",
+    "Time_Column": "sample_start_time",
+    "Table_Name": "tmp.tmp_KG_base_table_company_label_for_mobile_dc",
+    "dt": "2023-05-20",
+    "Limits":"(sample_start_time < '2023-02-01')"
+}

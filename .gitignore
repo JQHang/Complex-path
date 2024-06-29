@@ -1,0 +1,14 @@
+# Byte-compiled
+__pycache__/
+
+# Packaging
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Dataset directory
+dataset
+
+# result data directory
+result_data

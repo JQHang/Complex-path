@@ -1,0 +1,7 @@
+{
+    "data_dir": "/user/mart_coo/mart_coo_innov/CompGraph/Mag240m",
+    "graph_dir": "/Graph",
+    "node_tables_dir": "/Node_Tables",
+    "edge_tables_dir": "/Edge_Tables",
+    "output_dir": "/Output"
+}

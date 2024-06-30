@@ -26,7 +26,7 @@ First, please download the dataset that meets our framework's format requirement
 
 After unzipping the dataset, place it in your HDFS file system and modify the path corresponding to the 'data_dir' key in [this file](main/config/Complex_Graphs/Mag240m.json) to match the location where you've placed the dataset.
 
-Then, you can directly run the code in [this file](main/example/mag240m.json) to obtain the results after aggregating the three types of paths specified in the [configuration file](main/config/Complex_Paths/Mag240m_Paths_Example.json), as well as the accuracy of predicting paper types based on the aggregated results.
+Then, you can directly run the code in [this file](main/example/complex_path_example.py) to obtain the aggregation results of the three path types specified in the [configuration file](main/config/Complex_Paths/Mag240m_Paths_Example.json), as well as the accuracy of the paper subject area prediction based on the aggregation results.
 
 # Code Structrue
 

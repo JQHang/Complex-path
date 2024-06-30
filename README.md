@@ -11,22 +11,22 @@ Our framework is mainly based on a new generalized path schema called 'Complex-p
 <img src="./fig/complex_path.png" width="100%">
 </p>
 
-It's designed for defining non-linear conditional path types in a standard form, which we find quite useful in real-world scenarios. Below is an example of a non-linear conditional path type:
+It's designed for defining non-linear conditional path types in a standard form, which we find quite useful in real-world scenarios. Below is an example non-linear conditional path type:
 
 <p align="center">
 <img src="./fig/Path_Example_V3.png" alt="Nonlinear-Conditional-Path" width="70%">
 </p>
-<div align="center">An example of nonlinear conditional path type. (Link each customer to existing high-value customers via co-industry and co-region relations.)</div>
+<div align="center">Link each customer to existing high-value customers via co-industry and co-region relations.</div>
 <br>
 
-Based on our complex-path definition, the configuration file for this example path type can be found [here](main/config/Complex_Paths/Complex_Path_Example.json). The configuration guide for complex-paths can be found here. [here](main/config/Complex_Paths/CONFIG_GUIDE.md).
+Based on our complex-path definition, the configuration file for this example path type can be found [here](main/config/Complex_Paths/Complex_Path_Example.json). The configuration guide for complex-paths can be found [here](main/config/Complex_Paths/CONFIG_GUIDE.md).
 
 # Demonstration on Microsoft Academic Graph
 First, please download the dataset that meets our framework's format requirements [here](https://drive.google.com/file/d/15HLmx_PS6gPB7rsArhWmQ72qGw265-sP/view?usp=sharing). 
 
 After unzipping the dataset, place it in your HDFS file system and modify the path corresponding to the 'data_dir' key in [this file](main/config/Complex_Graphs/Mag240m.json) to match the location where you've placed the dataset.
 
-Then, you can directly run the code in [this file](main/example/complex_path_example.py) to obtain the aggregation results of the three path types specified in the [configuration file](main/config/Complex_Paths/Mag240m_Paths_Example.json), as well as the accuracy of the paper subject area prediction based on the aggregation results.
+Then, you can directly run the code in [this file](main/example/complex_path_example.py) to obtain the aggregation results for the three path types specified in the [configuration file](main/config/Complex_Paths/Mag240m_Paths_Example.json), as well as the accuracy of predicting paper subject areas based on the aggregation results.
 
 # Code Structrue
 
@@ -37,7 +37,7 @@ CompNode/
 │   ├── graph/               # Code for building heterogeneous graphs in tabular form
 │   ├── hdfs/                # Code for HDFS system-related operations
 │   ├── model/               # PyTorch code for various models
-│   ├── pyspark/             # Code for Spark system-related operations (e.g., table Aggregation)
+│   ├── pyspark/             # Code for Spark system-related operations
 │   ├── python/              # Code for some Python-based operations (e.g., decorators)
 │   └── Utils/               # Additional utility functions
 │

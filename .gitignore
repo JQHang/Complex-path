@@ -12,3 +12,6 @@ dataset
 
 # result data directory
 result_data
+
+# macOS Finder metadata
+.DS_Store
